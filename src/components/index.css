@@ -1,0 +1,22 @@
+.table{
+    margin-top:2%;
+    width: 50em;
+}
+.h6tag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2em;
+}
+h6 {
+    color: #0f5374;
+}
+.forms{
+    margin: 2em;
+    flex-direction: column;
+}
+.inputstyle{
+    margin: 15px;
+    
+}
