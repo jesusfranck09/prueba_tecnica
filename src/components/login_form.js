@@ -7,15 +7,15 @@
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (username && pass) {
-        if (username === "azteca" && pass === "12345") {
-            autorizeUser();
-        } else {
-            setPasswordIncorrect("Usuario y contraseña incorrectos");
-            setOpportunities(opportunities - 1);
-        }
-        } else {
-            alert("Complete todos los campos");
+        if(username && pass){
+            if (username === "azteca" && pass === "12345") {
+                autorizeUser();
+            } else {
+                setPasswordIncorrect("Usuario y contraseña incorrectos");
+                setOpportunities(opportunities - 1);
+            }
+        }else{
+            alert("No deje espacios en blanco")
         }
     };
 
@@ -27,7 +27,7 @@
         <div className="card-body">
             <form onSubmit={handleSubmit}>
             <div className="forms">
-                <div class="form-group">
+                <div className="form-group">
                 <input
                     type="text"
                     value={username}
@@ -36,7 +36,7 @@
                     className="form-control inputstyle"
                 />
                 </div>
-                <div class="form-group">
+                <div className="form-group">
                 <input
                     type="text"
                     value={pass}
@@ -45,8 +45,8 @@
                     className="form-control inputstyle"
                 />
                 </div>
-                <button class="btn btn-primary" type="sumbit">
-                Iniciar sesión
+                <button className="btn btn-primary" type="sumbit">
+                    Iniciar sesión
                 </button>
             </div>
             </form>

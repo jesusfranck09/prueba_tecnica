@@ -3,7 +3,7 @@
     import Data_user from "./data_user";
     import "./index.css";
 
-    const LoginForm = () => {
+    const Validation = () => {
     const [autentication, setAutentication] = useState(false);
     const [key, setKey] = useState("");
 
@@ -19,4 +19,4 @@
     return <div>{validation}</div>;
     };
 
-    export default LoginForm;
+    export default Validation;
